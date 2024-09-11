@@ -1,10 +1,17 @@
 package model;
 
 public class Member extends User {
-
     private String address;
     private String number;
 
+    // Constructeur
+    public Member(String id, String name, String email, String password, String role, String address, String number) {
+        super(id, name, email, password, role);
+        this.address = address;
+        this.number = number;
+    }
+
+    // Getters et Setters spécifiques à Member
     public String getAddress() {
         return address;
     }
@@ -18,12 +25,6 @@ public class Member extends User {
     }
 
     public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public Member(String name, String email, String password, String address, String number) {
-        super(name, email, password);
-        this.address = address;
         this.number = number;
     }
 }

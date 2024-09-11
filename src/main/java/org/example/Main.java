@@ -1,6 +1,10 @@
 package org.example;
 
-import utils.database.JdbcConnection;
+import db.JdbcConnection;
+import model.Admin;
+import model.Member;
+import model.User;
+import service.AuthService;
 import java.sql.Connection;
 import java.util.Optional;
 
@@ -12,8 +16,25 @@ public class Main {
             System.out.println("Connection is available.");
         } else {
             System.out.println("Failed to establish a connection.");
+            return;
         }
 
-        System.out.println(conn);
+        AuthService authService = new AuthService(conn.get());
+
+        // Exemple d'inscription
+        boolean registrationSuccess = authService.registerUser("John Doe", "john@example.com", "password123", "member");
+        if (registrationSuccess) {
+            System.out.println("User registered successfully!");
+        } else {
+            System.out.println("User registration failed.");
+        }
+
+        // Exemple de connexion
+        Optional<User> loggedInUser = authService.loginUser("john@example.com", "password123");
+        if (loggedInUser.isPresent()) {
+            System.out.println("Login successful for: " + loggedInUser.get().getName());
+        } else {
+            System.out.println("Login failed.");
+        }
     }
 }
