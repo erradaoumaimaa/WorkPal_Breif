@@ -10,6 +10,7 @@ public class User {
     private String password;
     private UserRole role;
 
+
     public User(UUID id, String name, String email, String password, UserRole role) {
         this.id = id;
         this.name = name;

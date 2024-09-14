@@ -10,6 +10,12 @@ import java.util.Optional;
 import java.util.UUID;
 
 public class UserRepositoryImpl implements UserRepository {
+
+    private final Connection connection;
+
+    public UserRepositoryImpl(Connection connection) {
+        this.connection = connection;
+    }
     @Override
     public Optional<User> findByEmail(String email) {
         String sql = "SELECT * FROM users WHERE email = ?";

@@ -14,11 +14,11 @@ public class Espace {
     private List<String> equipements;
     private String description;
     private BigDecimal prix;
-
-/*
+    private UUID managerId;
+    /*
  constructeur
  */
-    public Espace(UUID id, String nom, TypeEspace type, int capacite, List<String> equipements, String description, BigDecimal prix) {
+    public Espace(UUID id, String nom, TypeEspace type, int capacite, List<String> equipements, String description, BigDecimal prix, UUID managerId) {
         this.id = id;
         this.nom = nom;
         this.type = type;
@@ -26,6 +26,7 @@ public class Espace {
         this.equipements = equipements;
         this.description = description;
         this.prix = prix;
+        this.managerId = managerId;
     }
 
     /*
@@ -87,6 +88,14 @@ public class Espace {
     public void setPrix(BigDecimal prix) {
         this.prix = prix;
     }
+    public UUID getManagerId() {
+        return managerId;
+    }
+
+    public void setManagerId(UUID managerId) {
+        this.managerId = managerId;
+    }
+
     @Override
     public String toString() {
         return "Espace{" +
@@ -95,8 +104,9 @@ public class Espace {
                 ", type=" + type +
                 ", capacite=" + capacite +
                 ", equipements=" + equipements +
-                ", description='" + description +
-                ", prix=" + prix + '\'' +
+                ", description='" + description + '\'' +
+                ", prix=" + prix +
+                ", managerId=" + managerId +
                 '}';
     }
 }

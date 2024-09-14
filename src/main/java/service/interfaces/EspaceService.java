@@ -7,11 +7,11 @@ import java.util.UUID;
 
 public interface EspaceService {
 
-    Espace ajouterEspace(Espace espace) throws SQLException;
+    Espace ajouterEspace(Espace espace, UUID managerId) throws SQLException;
 
-    Espace modifierEspace(Espace espace) throws SQLException;
+    Espace modifierEspace(Espace espace, UUID managerId) throws SQLException;
 
     void supprimerEspace(UUID id) throws SQLException;
 
-
+    List<Espace> getAllEspaces() throws SQLException;
 }
