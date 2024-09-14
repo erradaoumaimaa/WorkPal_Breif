@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0465f863-ba11-4e81-be55-4dc4dab8465f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enum/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enum/TypeEspace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Espace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/implementation/EspaceRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/interfaces/EspaceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/implementation/EspaceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/interfaces/EspaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/implementation/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/interfaces/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/MaWorkpalService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enum/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enum/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Gestionnaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Gestionnaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/implementation/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/workPal.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/workPal.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
