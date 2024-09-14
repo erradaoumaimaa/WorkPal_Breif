@@ -11,7 +11,7 @@ public class Member extends User {
         this.number = number;
     }
 
-    // Getters et Setters spécifiques à Member
+    // Getters et Setters
     public String getAddress() {
         return address;
     }

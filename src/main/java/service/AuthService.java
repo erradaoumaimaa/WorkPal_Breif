@@ -32,4 +32,5 @@ public class AuthService {
     public boolean deleteUser(String email) {
         return userRepository.deleteUser(email);
     }
+
 }

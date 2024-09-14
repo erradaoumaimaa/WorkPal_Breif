@@ -1,15 +1,17 @@
 package model;
 
+import java.util.UUID;
+import Enum.Role;
 public class User {
-    protected String id;
+    protected UUID id;
     protected String name;
     protected String email;
     protected String password;
-    protected String role;
+    protected Role role;
 
     // Constructeur
-    public User(String id, String name, String email, String password, String role) {
-        this.id = id;
+    public User(String id, String name, String email, String password, Role role) {
+        this.id = UUID.randomUUID();
         this.name = name;
         this.email = email;
         this.password = password;

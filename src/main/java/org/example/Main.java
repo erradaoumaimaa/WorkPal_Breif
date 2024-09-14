@@ -21,7 +21,7 @@ public class Main {
 
         AuthService authService = new AuthService(conn.get());
 
-        // Exemple d'inscription
+        // d'inscription
         boolean registrationSuccess = authService.registerUser("John Doe", "john@example.com", "password123", "member");
         if (registrationSuccess) {
             System.out.println("User registered successfully!");
@@ -29,7 +29,7 @@ public class Main {
             System.out.println("User registration failed.");
         }
 
-        // Exemple de connexion
+        // login
         Optional<User> loggedInUser = authService.loginUser("john@example.com", "password123");
         if (loggedInUser.isPresent()) {
             System.out.println("Login successful for: " + loggedInUser.get().getName());
